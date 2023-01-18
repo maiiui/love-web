@@ -1,0 +1,111 @@
+/* Mobile + Tablet + lowPC - <1113px*/
+@media only screen and (max-width: 1113px) {
+
+}
+
+
+/* lowPC */
+@media only screen and (max-width: 1113px) and (min-width: 1024px) {
+    .playlist-header {
+        margin-right: 20px;
+        margin-left: 0;
+    }
+
+    .list-songs {
+        margin-right: 20px;
+        margin-left: 0;
+    }
+
+    .daskboard {
+        margin-top: 24px;
+    }
+
+    .playlist {
+        margin-top: 24px;
+    }
+}
+
+/* Tablet + Mobile - <1024px*/
+@media only screen and (max-width: 1023px) {
+    .daskboard {
+        left: var(--nav-width-tablet);
+        padding-top: 0px;
+        margin-top: 0;
+        width: 100%;
+    }
+    
+    .playlist {
+        margin: var(--daskboard-height-tablet) 0 0 0;
+        width: 100%;
+    }
+} 
+
+
+/* Tablet - 740px< <1024px*/
+@media only screen and (max-width: 1023px) and (min-width: 739px) {
+
+    .daskboard {
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: var(--daskboard-height-tablet);
+        padding: 0 70px 0 10px;
+        justify-content: center;
+    }
+
+    .daskboard__header {
+        order: 1;
+    }
+
+    .cd {
+        order: 0;
+        height: 80%;
+        width: auto;
+    }
+
+    .daskboard__image {
+        height: 100%;
+        width: auto;
+    }
+
+    .control {
+        order: 2;
+    }
+
+    .progress {
+        order: 3;
+    }
+}
+
+
+/* Mobile - <740px*/
+@media only screen and (max-width: 739px) {
+    .daskboard {
+        left: 0;
+        top: var(--header-height-mobile);
+    }
+
+    .control {
+        margin: 0px 0;
+    }
+
+    .progress {
+        margin: 25px;
+    }
+
+    .playlist {
+        margin-top: 470px;
+    }
+
+    .playlist-header {
+        display: none;
+    }
+
+    .list-songs {
+        margin: 0 30px;
+        padding-left: 0;
+    }
+}
+/* PC */
+@media only screen and (min-width: 1024px) {
+
+}

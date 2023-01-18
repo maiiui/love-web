@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LovelyWeb</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./grid_system/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/game.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="main-web">
+        <div class="app">
+            <!-- Navigation / Sidebar -->
+            <div class="nav">
+                <div class="logo">
+                    <a href="./index.html" class="logo__link">
+                        <h1 class="logo__name">LOVE <span style="font-size: 2.4rem; font-weight: 300;">web</span></h1>
+                        <i class="fa-solid fa-heart logo__icon"></i>
+                    </a>
+                </div>
+                <ul class="navlist">
+                    <li class="nav-item">
+                        <a class="nav-item__link" href="./index.html">
+                            <i class="fa-solid fa-house nav-item__icon"></i>
+                            <h2 class="nav-item__name">Home</h2>
+                            <i class="fa-solid fa-bars-staggered nav-item__icon--active"></i>
+                        </a>
+    
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item__link" href="./music.html">
+                            <i class="fa-solid fa-music nav-item__icon"></i>
+                            <h2 class="nav-item__name">Music</h2>
+                            <i class="fa-solid fa-headset nav-item__icon--active"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-item__link" href="./game.html">
+                            <i class="fa-solid fa-gamepad nav-item__icon"></i>
+                            <h2 class="nav-item__name">Game</h2>
+                            <i class="fa-regular fa-chess-bishop nav-item__icon--active"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item__link" href="#">
+                            <i class="fa-solid fa-film nav-item__icon"></i>
+                            <h2 class="nav-item__name">Movie</h2>
+                            <i class="fa-regular fa-closed-captioning nav-item__icon--active"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item__link" href="#">
+                            <i class="fa-solid fa-palette nav-item__icon"></i>
+                            <h2 class="nav-item__name">Paint</h2>
+                            <i class="fa-solid fa-paintbrush nav-item__icon--active"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+            <!-- Container -->
+            <div class="container">
+                <!-- Header -->
+                <div class="header grid">
+                    <div class="row">
+                        <div class="nav-mobile nav col l-0 m-0 c-2">
+                            <div class="nav-menu">
+                                <i class="fa-solid fa-bars nav-menu__icon"></i>
+                            </div>
+                            <ul class="navlist">
+                                <li class="nav-item">
+                                    <a class="nav-item__link" href="./index.html">
+                                        <i class="fa-solid fa-house nav-item__icon"></i>
+                                        <h2 class="nav-item__name">Home</h2>
+                                        <i class="fa-solid fa-bars-staggered nav-item__icon--active"></i>
+                                    </a>
+                
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-item__link" href="./music.html">
+                                        <i class="fa-solid fa-music nav-item__icon"></i>
+                                        <h2 class="nav-item__name">Music</h2>
+                                        <i class="fa-solid fa-headset nav-item__icon--active"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-item__link" href="./game.html">
+                                        <i class="fa-solid fa-gamepad nav-item__icon"></i>
+                                        <h2 class="nav-item__name">Game</h2>
+                                        <i class="fa-regular fa-chess-bishop nav-item__icon--active"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-item__link" href="#">
+                                        <i class="fa-solid fa-film nav-item__icon"></i>
+                                        <h2 class="nav-item__name">Movie</h2>
+                                        <i class="fa-regular fa-closed-captioning nav-item__icon--active"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-item__link" href="#">
+                                        <i class="fa-solid fa-palette nav-item__icon"></i>
+                                        <h2 class="nav-item__name">Paint</h2>
+                                        <i class="fa-solid fa-paintbrush nav-item__icon--active"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="logo-mobile logo col l-0 m-0 c-6">
+                            <a href="#" class="logo__link">
+                                <h1 class="logo__name">LOVE <span style="font-size: 2.4rem; font-weight: 300;">web</span></h1>
+                                <i class="fa-solid fa-heart logo__icon"></i>
+                            </a>
+                        </div>
+    
+                        <div class="search col l-7 m-7 c-2">
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-xmark search__icon-close"></i>
+                                <i class="fa-solid fa-magnifying-glass search__icon"></i>
+                                <i class="fa-solid fa-magnifying-glass search__icon-mobile"></i>
+                                <input type="text" placeholder="Tìm kiếm bài hát, ca sĩ,..." class="search__input">
+                            </div>
+                        </div>
+        
+                        <div class="account col l-5 m-5 c-2">
+                            <div class="account__item account__theme">
+                                <i class="fa-solid fa-shirt account__theme-icon"></i>
+                                <p class="account__item-note">Theme</p>
+                            </div>
+                            <div class="account__item account__setting">
+                                <i class="fa-solid fa-gear account__setting-icon"></i>
+                                <p class="account__item-note">Setting</p>
+                            </div>
+                            <div class="account__item account__avatar">
+                                <img src="./assets/images/avatar.jpg" alt="" class="account__image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="main-content">
+                    <div class="start-screen">
+                        <div class="start-item start-item__play">
+                            <h3 class="start-item__title">Start</h3>
+                        </div>
+                        <div class="start-item  start-item__instruct">
+                            <h3 class="start-item__title">Instruction</h3>
+                        </div>
+                        <div class="start-item start-item__setting">
+                            <h3 class="start-item__title">Setting</h3>  
+                        </div>
+                    </div>
+
+                    <div class="instruct-screen">
+                        <h4 class="instruct-screen__title">
+                            Go to Setting to choose your car. Each car has its own ability:
+                        </h4>
+                        <ul class="instruct-screen__listdecs">
+                            <li class="instruct-screen__decs">Go through opposite cars</li>
+                            <li class="instruct-screen__decs">Revive three times</li>
+                            <li class="instruct-screen__decs">Lauch rockets</li>
+                        </ul>
+                        <h4 class="instruct-screen__title">Drive your car in the opposite direction with the arrow keys</h4>
+                        <h4 class="instruct-screen__title">The longer way you drive, the higher score you get</h4>
+                        <h4 class="instruct-screen__title">Use space on keyboard to activate your special ability</h4>
+                        <div class="instruct-return">
+                            <div class="return-btn">
+                                <h4 class="return-decs">Return menu</h4>
+                                <i class="fa-solid fa-arrow-left-long return-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="setting-screen">
+                        <div class="setting-selection"></div>
+                        <div class="setting-control">
+                            <div class="setting-control__previous">
+                                <i class="fa-solid fa-backward setting-control__previous-icon"></i>
+                            </div>
+                            
+                            <button class="setting-control__confirm-btn">Confirm</button>
+                            
+                            <div class="setting-control__next">
+                                <i class="fa-solid fa-forward setting-control__next-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="play-screen">
+                        <div class="race-ground">
+                            <div class="usercar"></div>
+                            <div class="enemycar enemycar1"></div>
+                            <div class="enemycar enemycar2"></div>
+                            <div class="enemycar enemycar3"></div>
+                            <div class="enemycar enemycar4"></div>
+                            <div class="rocket"></div>
+                            <div class="explode" style="background-image: url(./assets/images/explode1.jpg);"></div>
+                        </div>
+
+                        <div class="info-ground">
+                            <div class="game-intro">
+                                <h3 class="game-title">Traffic</h3>
+                            </div>
+                            <div class="game-score">
+                                <p class="current-score">Score : </p>
+                                <p class="best-score">Best score : </p>
+                            </div>
+                            <div class="game-function active">
+                                <div class="game-function__title">Ability</div>
+                                <div class="game-ability">
+                                    <p class="lives-remain"></p>
+                                    <div class="game-ability__image"></div>
+                                    <p class="game-ability__instruct">Press spacebar</p>
+                                </div>
+                                <div class="ability-active">
+                                    <h4 class="ability-active__title">Active in </h4>
+                                    <p class="ability-active__time"></p>
+                                </div>
+                                <div class="ability-cooldown">
+                                    <img class="ability-cooldown__image" src="./assets/images/time.jpg"></img>
+                                    <p class="ability-cooldown__title">Cooldown in </p>
+                                    <p class="ability-cooldown__time"></p>
+                                </div>
+                            </div>
+                            <div class="gameplay-return">
+                                <div class="return-btn">
+                                    <h4 class="return-decs">Return menu</h4>
+                                    <i class="fa-solid fa-arrow-left-long return-icon"></i>
+                                </div>
+                            </div>
+                            <div class="break-btn" style="width: 0; height: 0;"></div>
+                        </div>
+
+                        <input type="text" class="get-control">
+                    </div>
+
+                    <div class="endgame-screen">
+                        <h4 class="endgame-title">Game over</h4>
+                        <div class="game-score">
+                            <p class="current-score">Your score : 360</p>
+                            <p class="best-score">Best score : 1238</p>
+                        </div>
+                        <div class="endgame-return">
+                            <div class="return-btn">
+                                <h4 class="return-decs">Return menu</h4>
+                                <i class="fa-solid fa-arrow-left-long return-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+            </div>
+    
+        <!-- Footer -->
+        <footer class="footer">
+                
+        </footer>
+    </div>
+
+    <div class="menu-modal">
+        <div class="menu__overlay"></div>
+        <div class="menu__inner">
+            <div class="menu__header">
+                <div class="menu__header-item account__item">
+                    <img src="./assets/images/avatar.jpg" alt="" class="account__image">
+                </div>
+                <div class="menu__header-item logo-mobile logo">
+                    <a href="#" class="logo__link">
+                        <h1 class="logo__name">LOVE <span style="font-size: 2.4rem; font-weight: 300;">web</span></h1>
+                        <i class="fa-solid fa-heart logo__icon"></i>
+                    </a>
+                </div>
+                <i class="fa-solid fa-xmark menu__header-item menu__close-icon"></i>
+            </div>
+            <ul class="menu__list">
+                <li class="menu-item">
+                    <a class="menu-item__link" href="./index.html">
+                        <i class="fa-solid fa-house menu-item__icon"></i>
+                        <h2 class="menu-item__name">Home</h2>
+                    </a>
+    
+                </li>
+                <li class="menu-item">
+                    <a class="menu-item__link" href="./music.html">
+                        <i class="fa-solid fa-music menu-item__icon"></i>
+                        <h2 class="menu-item__name">Music</h2>
+                    </a>
+                </li>
+                <li class="menu-item active">
+                    <a class="menu-item__link" href="./game.html">
+                        <i class="fa-solid fa-gamepad menu-item__icon"></i>
+                        <h2 class="menu-item__name">Game</h2>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-item__link" href="#">
+                        <i class="fa-solid fa-film menu-item__icon"></i>
+                        <h2 class="menu-item__name">Movie</h2>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-item__link" href="#">
+                        <i class="fa-solid fa-palette menu-item__icon"></i>
+                        <h2 class="menu-item__name">Paint</h2>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="search-modal">
+        <div class="search__inner">
+            <i class="fa-solid fa-magnifying-glass search-modal__icon"></i>
+            <input type="text" placeholder="Tìm kiếm bài hát, ca sĩ,..." class="search-modal__input">
+        </div>
+        <div class="search-suggest">
+            <p class="search-suggest__title">Hot search</p>
+            <div class="search-suggest__list">
+                <p class="search-suggest__item">HTML</p>
+                <p class="search-suggest__item">CSS</p>
+                <p class="search-suggest__item">Javascript</p>
+                <p class="search-suggest__item">Lofi chill</p>
+                <p class="search-suggest__item">Alan walker</p>
+                <p class="search-suggest__item">My love</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+    <script src="./game.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- https://onepagelove.com/ --> 

@@ -1,0 +1,260 @@
+
+.app {
+    display: flex;
+}
+
+.nav {
+    width: var(--nav-width-pc);
+    height: 100%;
+    background-color: var(--primary-color);
+    opacity: 0.95;
+    padding: 0px 0;
+    position: fixed;
+}
+
+.logo {
+    padding: 10px 0;
+}
+
+.logo__link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo__name {
+    font-size: 2.6rem;
+    color: var(--red-color);
+    opacity: 0.7;
+    font-weight: 700;
+    padding-left: 45px;
+}
+
+.logo__icon {
+    font-size: 2.3rem;
+    color: var(--red-color);
+}
+
+.navlist {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item__link {
+    text-decoration: none;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.nav-item:hover .nav-item__name {
+    margin-left: 3px;
+}
+
+.nav-item__icon--active {
+    color: var(--red-color);
+    font-size: 1.6rem;
+    display: none;
+}
+
+.nav-item.active {
+    background-color: #172c48;
+}
+
+.nav-item.active .nav-item__icon--active {
+    display: block;
+}
+
+.nav-item__name {
+    color: var(--white-color);
+    opacity: 0.9;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding: 0 10px;
+    margin: 0 60px 0 10px;
+}
+
+.nav-item__icon {
+    font-size: 1.8rem;
+    color: var(--white-color);
+    opacity: 0.8;
+    padding: 10px 10px;
+    margin-left: 12px;
+}
+
+.container {
+    background-color: var(--primary-color);
+    flex: 1;
+    height: auto;
+    margin-left: var(--nav-width-pc);
+    width: var(--container-width-pc);
+    padding-bottom: 100px;
+}
+
+.header {
+    position: fixed;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    background-color: var(--primary-color);
+    z-index: 1;
+}
+
+.nav-mobile {
+    width: 250px;
+    background-color: var(--primary-color);
+    opacity: 0.95;
+    padding: 0;
+}
+
+.search {
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper {
+    height: var(--header-item-height);
+    width: 65%;
+    min-width: 350px;
+    background-color: var(--lower-primary-color);
+    border-radius: 30px;
+    border: none;
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.search__icon-close {
+    display: none;
+}
+
+.search__icon {
+    font-size: 1.8rem;
+    color: var(--white-color);
+    opacity: 0.8;
+    padding: 15px;
+}
+
+.search__icon-mobile {
+    font-size: 1.8rem;
+    color: var(--white-color);
+    opacity: 0.8;
+    padding: 15px;
+    display: none;
+}
+
+.search__icon:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.search__input {
+    background-color: transparent;
+    border: 0px;
+    height: 100%;
+    flex: 1;
+    color: var(--white-color);
+    font-size: 1.4rem;
+}
+
+.search__input:focus {
+    outline: none;
+}
+
+.search__input::placeholder {
+    color: var(--white-color);
+    opacity: 0.8;
+    font-size: 1.4rem;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;    
+    height: var(--header-height);
+}
+
+.account__item:first-child {
+    margin-left: 20px;
+}
+
+.account__item {
+    height: var(--header-item-height);
+    width: var(--header-item-height);
+    background-color: var(--lower-primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 6px;
+    position: relative;
+}
+
+.account__item-note {
+    position: absolute;
+    background-color: rgb(57, 57, 57);
+    color: white;
+    padding: 3px;
+    border-radius: 6px;
+    top: 37px;
+    right: 2px;
+    box-shadow: 0 1px 1px rgb(61, 61, 61);
+    display: none;
+}
+
+.account__item:hover .account__item-note {
+    display: block;
+}
+
+.account__item:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.account__theme-icon {
+    font-size: 1.6rem;
+    background: -webkit-linear-gradient(rgb(246, 3, 3), rgb(2, 252, 40));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.account__setting-icon {
+    font-size: 1.6rem;
+    color: var(--white-color);
+}
+
+.account__image {
+    height: 100%;
+    width: auto;
+    border-radius: 50%;
+}
+
+/* Player */
+
+.main-content {
+    margin-top: var(--header-height);
+    display: flex;
+}
+
+/* Modal */
+.menu-modal {
+    display: none;
+}
+
+.search-modal {
+    display: none;
+}
+

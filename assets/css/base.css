@@ -1,0 +1,90 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --red-color: red;
+    --text-color: #333;
+    --primary-color: #1d375a;
+    --lower-primary-color: #344b6b;
+    --header-height: 70px;
+    --nav-width-pc: 250px;
+    --nav-width-tablet: var(--header-height);
+    --container-width-pc: calc(100% - var(--nav-width-pc));
+    --container-width-tablet: calc(100% - var(--nav-width-tablet));
+    --header-item-height: calc(var(--header-height) / 1.6);
+    --header-height-mobile: 60px;
+    --header-item-height-mobile: calc(var(--header-height-mobile) / 1.6);
+
+    --playlist-width: calc(var(--player-width) - var(--daskboard-width));
+    --daskboard-width: 380px;
+    --daskboard-height-tablet: 300px;
+    --player-width: 100%;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.btn {
+    color: var(--white-color);
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 2.2rem;
+    opacity: 0.8;
+}
+
+.btn.active {
+    color: var(--red-color);
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+/* Animation */
+
+@keyframes slideFromBottom {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: none;
+    }
+}
+
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: none;
+    }
+}
+
+@keyframes displayScale {
+    from {
+        transform: scale(0, 0)
+    }
+    to {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes displayFromLeft {
+    from {
+        transform: translateX(-30%);
+        opacity: 0.7;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+
